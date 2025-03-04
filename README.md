@@ -1,15 +1,12 @@
-# Проект: Payment System
+# Payment System (WIP)
+Стек: Nest.js, TypeScript, Prisma, pnpm
 
-
-
-1. Установите зависимости:
-   ```bash
-   pnpm install
-   ```
-2. Запустите сервер:
-   ```bash
-   pnpm run start 
-   ```
-3. Для тестирования API используйте Postman или cURL.
-
+## TO:DO
+- [x] Базовая регистрация\авторизация
+- [x] Система кошельков\транзакций
+- [x] Валидация запросов
+- [ ] Ограничение к endpoint'ам по авторизации
+- [ ] Кеширование запросов к бд
 ---
+
+[Для тестирования API используйте Postman-файл](https://github.com/maalcjke/payment-system/blob/main/Payment%20System.postman_collection.json)

@@ -44,7 +44,6 @@ model Wallet {
 model WalletTransaction {
   id          String       @id @default(uuid())
   walletId    Int          @map("wallet_id")
-  userId      Int          @unique @map("user_id")
   action      WalletAction
   amount      Int
   description String?

@@ -20,11 +20,6 @@ export class WalletsController {
     return this.walletsService.create(createWalletDto);
   }
 
-  @Get()
-  findAll() {
-    return this.walletsService.findAll();
-  }
-
   @Get(':id')
   findOne(@Param('id') id: string) {
     return this.walletsService.findOne(+id);

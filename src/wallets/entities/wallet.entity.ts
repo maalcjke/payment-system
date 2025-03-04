@@ -1,5 +1,5 @@
 import { User } from '../../users/entities/user.entity';
-import { Transaction } from './transaction.entity';
+import { Transaction } from '../../transactions/entities/transaction.entity';
 
 export class Wallet {
   id: number;

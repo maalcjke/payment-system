@@ -1,4 +1,4 @@
-import { Wallet } from './wallet.entity';
+import { Wallet } from '../../wallets/entities/wallet.entity';
 
 export class Transaction {
   id: number;

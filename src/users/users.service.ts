@@ -55,18 +55,24 @@ export class UsersService {
       );
     }
 
-    const payload = { email: user.email };
+    const payload = { id: user.id, email: user.email, wallet: user.Wallet };
     return {
       access_token: await this.jwtService.signAsync(payload),
     };
   }
 
   async findByEmail(email: string) {
-    return this.prisma.user.findFirst({ where: { email: email } });
+    return this.prisma.user.findFirst({
+      where: { email: email },
+      include: { Wallet: true },
+    });
   }
 
   async findById(id: number) {
-    return this.prisma.user.findFirst({ where: { id: id } });
+    return this.prisma.user.findFirst({
+      where: { id: id },
+      include: { Wallet: true },
+    });
   }
 
   async remove(id: number) {

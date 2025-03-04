@@ -7,6 +7,7 @@
 - [x] Валидация запросов
 - [ ] Ограничение к endpoint'ам по авторизации
 - [ ] Кеширование запросов к бд
+- [ ] Покрытие unit-тестами
 ---
 
 [Для тестирования API используйте Postman-файл](https://github.com/maalcjke/payment-system/blob/main/Payment%20System.postman_collection.json)
